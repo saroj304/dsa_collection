@@ -18,6 +18,7 @@ public class CharInString {
             return false;
         }
 
+        
         int condition = searchString.length() - 1;
         //searching from last index
         while (true) {
