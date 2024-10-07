@@ -18,19 +18,19 @@ public class SearchIn2D {
 
     }
 
-    private static int searchIn2D(int target, int[][] arr) {
+    private static int[] searchIn2D(int target, int[][] arr) {
         if (arr.length == 0) {
             System.out.println("Nothing found");
-            return -1;
+            return new int[]{-1, -1};
         }
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[i].length; j++) {
-                if (arr[i][j] == target) {
-                    return target;
+        for (int row = 0; row < arr.length; row++) {
+            for (int column = 0; column < arr[row].length; column++) {
+                if (arr[row][column] == target) {
+                    return new int[]{row, column};
                 }
             }
         }
         System.out.println("Target not found");
-        return -1;
+        return new int[]{-1, -1};
     }
 }
