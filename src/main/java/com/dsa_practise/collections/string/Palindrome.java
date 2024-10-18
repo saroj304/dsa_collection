@@ -27,9 +27,7 @@ public class Palindrome {
 
 
 
-
-
-
+        
 
        /* for (int i = 0; i < result.length(); i++) {
             int j = result.length() - i - 1;
