@@ -8,7 +8,7 @@ public class Palindrome {
         System.out.println( checkPalindrome(word));
     }
 
-    private static boolean checkPalindrome(String word) {
+    public static boolean checkPalindrome(String word) {
         // Removing special characters and spaces
         String result = word.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
 
